@@ -1,51 +1,94 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdhussam | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>عبد الرحمن حسام</title>
+<style>
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;background:#f4f4f4;color:#222;line-height:1.9}
+  header{background:#1a1a2e;color:#fff;text-align:center;padding:70px 20px 60px;position:relative}
+  header h1{margin:0 0 8px;font-size:2rem}
+  header p{margin:0;opacity:.85}
+  #langBtn{position:absolute;top:16px;left:16px;background:#e94560;color:#fff;border:0;border-radius:20px;padding:6px 16px;cursor:pointer;font-size:.9rem}
+  main{max-width:720px;margin:0 auto;padding:20px}
+  .card{background:#fff;border-radius:16px;padding:24px;margin-bottom:20px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+  .card h2{margin:0 0 14px;padding-bottom:10px;border-bottom:3px solid #e94560;color:#1a1a2e}
+  .card h3{margin:0 0 4px}
+  .tags{display:flex;flex-wrap:wrap;gap:10px}
+  .tags span{background:#e94560;color:#fff;padding:8px 20px;border-radius:30px;font-size:.95rem}
+  ul{margin:0;padding-inline-start:22px}
+  a{color:#e94560;font-weight:bold;text-decoration:none}
+  a:hover{text-decoration:underline}
+  footer{text-align:center;color:#888;padding:30px 0}
+</style>
 </head>
 <body>
 
-    <header>
-        <h1>عبد الرحمن حسام</h1>
-        <p>طالب علم حاسوب | مطور ويب</p>
-    </header>
+<header>
+  <button id="langBtn" onclick="toggleLang()">English</button>
+  <h1 data-ar="عبد الرحمن حسام" data-en="Abdalrahman Hussam"></h1>
+  <p data-ar="طالب علوم حاسوب | مصمم ومطوّر مواقع ويب" data-en="Computer Science Student | Web Designer &amp; Developer"></p>
+</header>
 
-    <section class="about">
-        <h2>عنّي</h2>
-        <p>
-            طالب سنة ثالثة علم حاسوب. بشتغل على تطوير مواقع الويب باستخدام HTML و CSS، 
-            وعندي معرفة بـ Java و SQL. بطوّر مهاراتي حالياً عشان أشتغل فريلانس.
-        </p>
-    </section>
+<main>
+  <section class="card">
+    <h2 data-ar="نبذة عني" data-en="About Me"></h2>
+    <p data-ar="طالب في السنة الثالثة تخصص علوم الحاسوب. أصمّم وأطوّر مواقع ويب باستخدام HTML وCSS، ولدي خبرة في Java وSQL. أعمل على تطوير مهاراتي باستمرار، ومتاح لمشاريع العمل الحر (فريلانس)."
+       data-en="Third-year Computer Science student. I design and build websites with HTML and CSS, and I have experience in Java and SQL. I'm continuously improving my skills and available for freelance projects."></p>
+  </section>
 
-    <section class="skills">
-        <h2>المهارات</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Java</li>
-            <li>SQL</li>
-            <li>JavaFX</li>
-            <li>C++ (أساسيات)</li>
-        </ul>
-    </section>
+  <section class="card">
+    <h2 data-ar="الخدمات" data-en="Services"></h2>
+    <ul>
+      <li data-ar="تصميم وتطوير مواقع تعريفية للأعمال والمحلات" data-en="Design and development of business websites"></li>
+      <li data-ar="مواقع طلبات مع ربط الطلب عبر واتساب" data-en="Online ordering websites with WhatsApp integration"></li>
+      <li data-ar="تعديل وتحسين المواقع الحالية" data-en="Updating and improving existing websites"></li>
+    </ul>
+  </section>
 
-    <section class="projects">
-        <h2>المشاريع</h2>
-        <p>قريباً...</p>
-    </section>
+  <section class="card">
+    <h2 data-ar="المهارات" data-en="Skills"></h2>
+    <div class="tags">
+      <span>HTML</span><span>CSS</span><span>Java</span><span>SQL</span><span>JavaFX</span>
+      <span data-ar="C++ (أساسيات)" data-en="C++ (Basics)"></span>
+    </div>
+  </section>
 
-    <section class="contact">
-        <h2>تواصل معي</h2>
-        <p>تقدر تتواصل معي عبر GitHub: <a href="https://github.com/Abdhussam">Abdhussam</a></p>
-    </section>
+  <section class="card">
+    <h2 data-ar="المشاريع" data-en="Projects"></h2>
+    <h3 data-ar="موقع خبز الطيبات" data-en="Tayyibat Bread Website"></h3>
+    <p data-ar="موقع طلبات لمحل خبز الطيبات، يتيح للزبائن تصفّح المنتجات (خبز القمح وخبز العجين المخمّر) وإرسال الطلب مباشرة عبر واتساب."
+       data-en="An ordering website for Tayyibat Bread shop. Customers can browse the products (wheat bread and sourdough) and send their order directly via WhatsApp."></p>
+    <!-- لما يكون عندك رابط الموقع، أضف هاد السطر:
+    <a href="رابط_الموقع" target="_blank" data-ar="زيارة الموقع" data-en="Visit Website"></a>
+    -->
+  </section>
 
-    <footer>
-        <p>© 2026 Abdhussam</p>
-    </footer>
+  <section class="card">
+    <h2 data-ar="تواصل معي" data-en="Contact"></h2>
+    <p><span data-ar="البريد الإلكتروني:" data-en="Email:"></span> <a href="mailto:abdwork1@outlook.com" dir="ltr">abdwork1@outlook.com</a></p>
+    <p>GitHub: <a href="https://github.com/Abdhussam" target="_blank" dir="ltr">Abdhussam</a></p>
+  </section>
+</main>
 
+<footer>© 2026 Abdhussam</footer>
+
+<script>
+  let lang = "ar";
+  function render(){
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+    document.title = lang === "ar" ? "عبد الرحمن حسام" : "Abdalrahman Hussam";
+    const btn = document.getElementById("langBtn");
+    btn.textContent = lang === "ar" ? "English" : "العربية";
+    btn.style.left = lang === "ar" ? "16px" : "auto";
+    btn.style.right = lang === "ar" ? "auto" : "16px";
+    document.querySelectorAll("[data-ar]").forEach(el => {
+      el.innerHTML = el.dataset[lang];
+    });
+  }
+  function toggleLang(){ lang = lang === "ar" ? "en" : "ar"; render(); }
+  render();
+</script>
 </body>
 </html>
